@@ -1,5 +1,54 @@
-<!--
-    Replace this with your working code from Lab 2, and include:
-    - The styles in this folder's `style.css`
-    - The script in script.js, which should be included via a `<script src="script.js" >` call before your closing </body> tag 
--->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cavalier_lab1</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- wrapper -->
+      <header class="header"><h1>Dante Cavalier's Labs for INST377</h1></header>
+      <div class="container">
+        <!-- container -->
+        <div class="left_Section box">
+          <!-- left inputs -->
+          <h2>Album Names</h2>
+          <ol>
+            <li>Northlane - Alien</li>
+            <li>Invent Animate - Greyview</li>
+            <li>While She Sleeps - You Are We</li>
+            <li>ERRA - Drift</li>
+            <li>Thornhill - The Dark Pool</li>
+          </ol>
+        </div>
+        <div class="right_section box"> <!-- right side -->
+          <h2>Image Carousel</h2>
+          <div class="carousel">
+              <button class="prev">prev</button>
+              <div class ="slides"> <!-- images box -->
+                <div class="carousel_item visible"><img id="slide_1" src="images/alien.png" alt="An image of the album art of Northlane's 'Alien'" /></div>
+                <div class="carousel_item hidden"><img id="slide_2" src="images/greyview.png" alt="An image of the album art of Invent Animate's 'Greyview'" /></div>
+                <div class="carousel_item hidden"><img id="slide_3" src="images/yaw.png" alt="An image of the album art of While She Sleeps' 'You Are We'" /></div>
+                <div class="carousel_item hidden"><img id="slide_4" src="images/tdp.png" alt="An image of the album art of Thornhill's 'The Dark Pool'" /></div>
+              </div>
+              <button class="next">next</button>
+          </div>
+          <div class="box">
+            <!-- description box -->
+            Here is the cover art for the albums, Alien, Greyview, You are We, and The Dark Pool, respectively.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <footer class="footer">
+        <p>
+          dantecavalier <a href="http://github.com/dantecavalier">My Github Account</a>
+        </p>
+      </footer>
+    </div>
+    <script src="script.js" ></script>
+  </body>
+</html>
